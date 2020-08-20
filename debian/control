@@ -15,6 +15,11 @@ Architecture: any
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${shlibs:Depends}, ${misc:Depends}
+Conflicts:
+ libc6 [!alpha !ia64 !kfreebsd-amd64 !kfreebsd-i386 !hurd-i386],
+ libc6.1 [alpha ia64],
+ libc0.1 [kfreebsd-amd64 kfreebsd-i386],
+ libc0.3 [hurd-i386]
 Description: NSS module for using NIS+ as a naming service
  This package provides a Name Service Switch that allows your NIS+ server
  act as a name service. This means providing user account information,

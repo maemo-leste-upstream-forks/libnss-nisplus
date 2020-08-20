@@ -1,5 +1,7 @@
 libnss-nisplus (1.3-1) unstable; urgency=low
 
   * Initial Release (closes: bug#968632).
+  * libnss-nisplus is not installable due to the conflicts with libc6, this
+    is done on purpose as it requires a synchronized upload with glibc.
 
  -- Aurelien Jarno <aurel32@debian.org>  Tue, 18 Aug 2020 22:28:11 +0200
